@@ -55,13 +55,12 @@ void count (Array mang, Array *dem)
 // Hàm xuất giá trị xuất hiện nhiều nhất và vị trí của nó trong hàm random
 void XuatHienNhieuNhat(Array mang, Array dem)
 {
-    int max=0, giatri=0;
+    int max=0;
     for (int i = 0; i < dem.size; i++)
     {
         if (dem.ptr[i] > max)
         {
             max = dem.ptr[i];
-            giatri = mang.ptr[i];
         }
     }
 
